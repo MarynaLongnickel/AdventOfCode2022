@@ -1,5 +1,5 @@
 data = open(path).read().split('\n')
-
+ 
 l = [list(set(x[:len(x)//2]).intersection(set(x[len(x)//2:])))[0] for x in data]
 l2 = [list(set(data[x:x+3][0]).\
           intersection(set(data[x:x+3][1])).\
