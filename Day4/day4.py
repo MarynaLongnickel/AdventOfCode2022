@@ -8,8 +8,6 @@ for s in pairs:
     if (s[0][0] <= s[1][0] and s[0][1] >= s[1][1]) or \
        (s[0][0] >= s[1][0] and s[0][1] <= s[1][1]): 
         c1 += 1
-
-for s in pairs:
     if not((s[1][0] > s[0][1]) or (s[1][1] < s[0][0])): 
         c2 += 1
         
