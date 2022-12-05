@@ -5,8 +5,7 @@ from copy import deepcopy
 data = open(path).read().split('\n')
 
 boxes = [[x for x in y[1::4]] for y in data[:8]]
-boxes = np.rot90(boxes, 3)
-boxes = [[y for y in ''.join(x).strip()] for x in boxes]
+boxes = [[y for y in ''.join(x).strip()] for x in np.rot90(boxes, 3)]
 
 b = deepcopy(boxes)
 b2 = deepcopy(boxes)
